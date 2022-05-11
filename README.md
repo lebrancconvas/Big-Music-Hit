@@ -22,8 +22,9 @@ Web Application for recommended music according to your activity.
 - Framework / Library
   - Flask
   
-- Data
-  - JSON Server
+### Data
+
+- JSON Server
 
 ## Resource
 
