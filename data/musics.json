@@ -1,0 +1,9 @@
+{
+    "musics": [{
+        "id": 1,
+        "name": "Enter Sandman",
+        "artist": "Metallica",
+        "album": "Metallica",
+        "url": "https://open.spotify.com/track/5sICkBXVmaCQk5aISGR3x1?si=e41fe6063aa24ae0"
+    }]
+}

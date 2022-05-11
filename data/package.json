@@ -1,0 +1,12 @@
+{
+    "name": "data",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "json-server": "^0.17.0"
+    },
+    "scripts": {
+        "start": "json-server --watch musics.json --port 9000"
+    }
+}
