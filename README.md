@@ -14,6 +14,9 @@ Web Application for recommended music according to your activity.
 - Framework / Library
   - React
 
+- User Interface (UI) Tools
+  - Tailwind CSS
+
 ### Server
 
 - Programming Language
