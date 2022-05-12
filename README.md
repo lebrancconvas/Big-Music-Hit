@@ -33,3 +33,5 @@ Web Application for recommended music according to your activity.
 - [[Video / EN] How to Create a Flask + React Project | Python Backend + React Frontend (by Arpan Neupane)](https://www.youtube.com/watch?v=7LNl2JlZKHA)
 
 - [[Video / EN] Deploy Machine Learning Model Flask (by Stats Wire)](https://www.youtube.com/watch?v=MxJnR1DMmsY)
+
+- [[Video / EN] Hands-on Lab: Develop music analytics app with Spotify API in Python (by Prodramp)](https://www.youtube.com/watch?v=oNyaiWgqKDI)
