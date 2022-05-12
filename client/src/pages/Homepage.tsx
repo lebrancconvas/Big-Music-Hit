@@ -4,7 +4,7 @@ const Homepage = () => {
 
 	return(
 		<div>
-			<button className="bg-green-500 rounded-full w-39 h-45 hover:bg-teal-700">
+			<button className="bg-green-500 rounded-full m-10 w-39 h-45 hover:bg-teal-700">
 				Sign in with Spotify
 			</button>
 		</div>
