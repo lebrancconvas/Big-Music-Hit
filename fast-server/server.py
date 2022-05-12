@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from starlette.responses import RedirectResponse
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
+import pandas as pd
 import uvicorn
 import requests
 import json
@@ -8,8 +10,15 @@ import json
 app = FastAPI()
 
 origins = [
-	"http://localhost:3000"
+	"http://localhost:3000",
 ]
+
+SPOTIFY_CLIEND_ID = "452d0cc4456d4c618bfe395063b1e07b"
+SPOTIFY_CLIENT_SECRET = "83b7ab627189452ba18fea0ce0c8a7b8"
+SPOTIPY_REDIRECT_URI = "http://localhost:8000/data"
+SCOPE = "user-top-read"
+
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=SPOTIFY_CLIEND_ID, client_secret=SPOTIFY_CLIENT_SECRET, redirect_uri=SPOTIPY_REDIRECT_URI, scope=SCOPE))
 
 app.add_middleware(
 	CORSMiddleware,
@@ -21,8 +30,12 @@ app.add_middleware(
 
 @app.get('/')
 async def index():
-  url = "http://localhost:9000/musics"
-  req = requests.get(url)
-  data = req.content
-  json_data = json.loads(data)
-  return json_data
+	top_track = sp.current_user_top_tracks(limit=10, offset=0, time_range="short_term")
+	json_data = json.load(top_track)
+	return json_data
+# async def index():
+#   url = "http://localhost:9000/musics"
+#   req = requests.get(url)
+#   data = req.content
+#   json_data = json.loads(data)
+#   return json_data
