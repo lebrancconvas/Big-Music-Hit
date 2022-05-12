@@ -4,7 +4,7 @@
 
 Web Application for recommended music according to your activity.
 
-## Tech Stack
+## [Tech Stack](https://stackshare.io/lebrancconvas/big-music-hit)
 
 ### Client
 
