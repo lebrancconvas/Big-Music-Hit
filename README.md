@@ -35,3 +35,5 @@ Web Application for recommended music according to your activity.
 - [[Video / EN] Deploy Machine Learning Model Flask (by Stats Wire)](https://www.youtube.com/watch?v=MxJnR1DMmsY)
 
 - [[Video / EN] Hands-on Lab: Develop music analytics app with Spotify API in Python (by Prodramp)](https://www.youtube.com/watch?v=oNyaiWgqKDI)
+
+- [[Video Playlist / EN] Spotify API & OAuth2 (by Jason Goodison)](https://www.youtube.com/playlist?list=PLhYNDxVvF4oXa9ihs8WCzEriZsCF3Pp7A)
