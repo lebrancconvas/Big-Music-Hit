@@ -26,6 +26,8 @@ Web Application for recommended music according to your activity.
 
 - JSON Server
 
+## Setup
+
 ## Resource
 
 - [Video: How to Create a Flask + React Project | Python Backend + React Frontend by Arpan Neupane](https://www.youtube.com/watch?v=7LNl2JlZKHA)
