@@ -30,4 +30,6 @@ Web Application for recommended music according to your activity.
 
 ## Resource
 
-- [Video: How to Create a Flask + React Project | Python Backend + React Frontend by Arpan Neupane](https://www.youtube.com/watch?v=7LNl2JlZKHA)
+- [[Video / EN] How to Create a Flask + React Project | Python Backend + React Frontend (by Arpan Neupane)](https://www.youtube.com/watch?v=7LNl2JlZKHA)
+
+- [[Video / EN] Deploy Machine Learning Model Flask (by Stats Wire)](https://www.youtube.com/watch?v=MxJnR1DMmsY)
