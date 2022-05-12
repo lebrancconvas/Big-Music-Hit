@@ -6,7 +6,7 @@ const MusicList: React.FC = () => {
 	const [musicList, setMusicList] = useState([]);
 
 	useEffect(() => {
-		axios.get('http://127.0.0.1:5000/api/v1/musics')
+		axios.get('http://localhost:8000')
 			.then(response => response.data)
 			.then(data => setMusicList(data))
 			.catch(err => console.error(err))
@@ -14,7 +14,7 @@ const MusicList: React.FC = () => {
 
 	return(
 		<div>
-			<h1 className="text-center text-teal-800 text-3xl p-10">Music List</h1>
+			<h1 className="text-center text-teal-500 text-3xl p-10">Music List</h1>
 			{musicList.map((music: IMusicData, index: number) => {
 				return(
 					<div className="flex items-center justify-center rounded-full m-10 w-25 h-20 bg-fuchsia-300" key={index}>
