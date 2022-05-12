@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import MusicList from './pages/MusicList';
+import './App.css'
 
 const App: React.FC = () => {
   return(
