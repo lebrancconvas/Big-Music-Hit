@@ -30,6 +30,8 @@ Web Application for recommended music according to your activity.
 
 ## Resource
 
+- [[Text Series / EN] Enhance your Playlists with Machine Learning: Spotify Automatic Playlist Continuation (by Eric Chang)](https://medium.com/@enjui.chang/enhance-your-playlists-with-machine-learning-spotify-automatic-playlist-continuation-2aae2c926e77)
+
 - [[Video / EN] How to Create a Flask + React Project | Python Backend + React Frontend (by Arpan Neupane)](https://www.youtube.com/watch?v=7LNl2JlZKHA)
 
 - [[Video / EN] Deploy Machine Learning Model Flask (by Stats Wire)](https://www.youtube.com/watch?v=MxJnR1DMmsY)
