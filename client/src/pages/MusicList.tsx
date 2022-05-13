@@ -27,8 +27,13 @@ const MusicList: React.FC = () => {
 								<div className="w-full p-8">
 									<div className="flex justify-between">
 										<div>
-											<h3 className="text-2xl text-gray-darkest font-medium">{music.track}</h3>
+											<h3 className="text-2xl text-gray-darkest font-medium">
+												<a href={music.url} target="_blank" rel="noreferrer">
+													{music.track}
+												</a>
+											</h3>
 											<p className="text-sm text-grey mt-1">{music.artist}</p>
+											<p className="text-sm text-grey mt-1">{music.album}</p>
 										</div>
 										<div className="text-red-lighter">
 											<svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"/></svg>
