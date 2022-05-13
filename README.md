@@ -9,21 +9,21 @@ Web Application for recommended music according to your activity.
 ### Client
 
 - Programming Language
-  - Typescript
+  - [Typescript](https://www.typescriptlang.org/)
   
 - Framework / Library
-  - React
+  - [React](https://reactjs.org/)
 
 - User Interface (UI) Tools
-  - Tailwind CSS
+  - [Tailwind CSS](https://tailwindcss.com/)
 
 ### Server
 
 - Programming Language
-  - Python3
+  - [Python3](https://docs.python.org/3/)
   
 - Framework / Library
-  - FastAPI
+  - [FastAPI](https://fastapi.tiangolo.com/)
   
 ### Data
 
