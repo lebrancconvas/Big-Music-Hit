@@ -6,28 +6,28 @@ const MusicList: React.FC = () => {
 	const [musicList, setMusicList] = useState([]);
 
 	useEffect(() => {
-		axios.get('http://127.0.0.1:5000/api/v1/musics')
+		axios.get('http://localhost:8000')
 			.then(response => response.data)
 			.then(data => setMusicList(data))
 			.catch(err => console.error(err))
-	});
+	}, []);
 
 	return(
 		<div>
 			<h1 className="text-center text-teal-500 text-3xl p-10">Music List</h1>
 			{musicList.map((music: IMusicData, index: number) => {
 				return(
-					<div className="w-full">
+					<div className="w-25">
 						<div className="h-2 bg-red-light"></div>
 						<div className="bg-white shadow-lg rounded-lg">
 							<div className="flex">
 								<div>
-									<img className="w-full rounded hidden md:block" src="https://tailwindcss.com/img/card-top.jpg" alt="Track Pic" />
+									<img className="w-full rounded hidden md:block" src={music.image} alt="Track Pic" />
 								</div>
 								<div className="w-full p-8">
 									<div className="flex justify-between">
 										<div>
-											<h3 className="text-2xl text-gray-darkest font-medium">{music.name}</h3>
+											<h3 className="text-2xl text-gray-darkest font-medium">{music.track}</h3>
 											<p className="text-sm text-grey mt-1">{music.artist}</p>
 										</div>
 										<div className="text-red-lighter">
@@ -56,7 +56,7 @@ const MusicList: React.FC = () => {
 							<div className="mx-8 py-4">
 								<div className="flex justify-between text-sm text-grey-darker">
 									<p>0:00</p>
-									<p>5:00</p>
+									<p>{music.duration}</p>
 								</div>
 								<div className="mt-1">
 									<div className="h-1 bg-grey-dark rounded-full">
