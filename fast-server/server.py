@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-from secret import *
+from secret import * # This module is contained SPOTIFY_CLIEND_ID and SPOTIFY_CLIENT_SECRET 
 from album_list import *
 import pandas as pd
 import uvicorn
@@ -40,7 +40,7 @@ def ms_to_minsec(ms):
 @app.get('/')
 async def index():
   track_list_response = []
-  albums = sp.album(album_list['album_2']) 
+  albums = sp.album(album_list['album_5']) 
   artist_name = albums['artists'][0]['name']
   album_name = albums['name']
   track_list = albums['tracks']['items']
