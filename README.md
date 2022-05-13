@@ -23,7 +23,7 @@ Web Application for recommended music according to your activity.
   - Python3
   
 - Framework / Library
-  - Flask
+  - FastAPI
   
 ### Data
 
