@@ -1,9 +1,11 @@
 interface IMusicData {
 	id: number;
-	name: string;
+	track: string;
 	artist: string;
 	album: string;
-	url: string
+	duration: string;
+	url: string;
+	image: string
 }
 
 export default IMusicData
