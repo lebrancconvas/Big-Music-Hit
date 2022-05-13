@@ -13,8 +13,6 @@ origins = [
 	"http://localhost:3000",
 ]
 
-SPOTIFY_CLIEND_ID = "452d0cc4456d4c618bfe395063b1e07b"
-SPOTIFY_CLIENT_SECRET = "83b7ab627189452ba18fea0ce0c8a7b8"
 SPOTIPY_REDIRECT_URI = "http://localhost:8000/data"
 SCOPE = "user-top-read"
 
@@ -31,8 +29,8 @@ app.add_middleware(
 @app.get('/')
 async def index():
 	top_track = sp.current_user_top_tracks(limit=10, offset=0, time_range="short_term")
-	json_data = json.load(top_track)
-	return json_data
+	# json_data = json.load(top_track)
+	return top_track
 # async def index():
 #   url = "http://localhost:9000/musics"
 #   req = requests.get(url)
