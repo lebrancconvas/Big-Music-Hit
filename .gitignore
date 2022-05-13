@@ -3,3 +3,4 @@ node_modules
 dist
 venv
 __pycache__
+**/secret.py 
