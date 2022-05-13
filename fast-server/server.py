@@ -40,7 +40,7 @@ def ms_to_minsec(ms):
 @app.get('/')
 async def index():
   track_list_response = []
-  albums = sp.album(album_data['album_2']) 
+  albums = sp.album(album_list['album_2']) 
   artist_name = albums['artists'][0]['name']
   album_name = albums['name']
   track_list = albums['tracks']['items']
